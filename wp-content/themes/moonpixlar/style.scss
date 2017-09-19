@@ -1,0 +1,324 @@
+/*
+Theme Name: MoonPixlar
+Theme URI: https://wordpress.org/themes/moonpixlar/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Template:     twentysixteen
+Description: MoonPixlar
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: moonpixlar
+*/
+@import url(helpers.css);
+html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: #F2F2F2;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  &.login-page, &.register-page, &.lp-page {
+    background-image: url(images/bg_tiles.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.login-page {
+    &:before, &:after {
+      height: 0;
+    }
+  }
+  &.register-page {
+    &:before, &:after {
+      height: 0;
+    }
+  }
+  &.lp-page {
+    &:before, &:after {
+      height: 0;
+    }
+  }
+  &.login-page .entry-header, &.register-page .entry-header, &.lp-page .entry-header {
+    display: none;
+  }
+  &.login-page .site-header, &.register-page .site-header, &.lp-page .site-header {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  &.login-page .site-header .site-branding, &.register-page .site-header .site-branding, &.lp-page .site-header .site-branding {
+    margin: 0 auto;
+  }
+  &.login-page .site-header .site-branding .site-description, &.register-page .site-header .site-branding .site-description, &.lp-page .site-header .site-branding .site-description {
+    display: none;
+  }
+  &.login-page .site-header .site-branding .site-title a, &.register-page .site-header .site-branding .site-title a, &.lp-page .site-header .site-branding .site-title a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 7px;
+  }
+  &.login-page .site-footer .site-info, &.register-page .site-footer .site-info, &.lp-page .site-footer .site-info {
+    margin: 0 auto;
+  }
+  &.login-page .site-footer a, &.register-page .site-footer a, &.lp-page .site-footer a {
+    color: #fff;
+  }
+}
+
+body:not(.custom-background-image):after {
+    bottom: 0;
+    height: 0;
+}
+
+.site {
+  background: transparent;
+  margin: 0px;
+}
+
+.login-container, .register-container, .lp-container {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.login-container .button, .register-container .button, .lp-container .button {
+  background: #ff1070;
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.login-container .impu-form-line-fr input {
+  &[type="text"], &[type="password"] {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.register-container .impu-form-line-fr input {
+  &[type="text"], &[type="password"] {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.lp-container .impu-form-line-fr input {
+  &[type="text"], &[type="password"] {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.login-container .impu-form-links {
+  .impu-form-links-reg a, .impu-form-links-pass a {
+    background: #258cb1;
+    width: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    line-height: 36px;
+    margin: 10px 0;
+  }
+}
+
+.register-container .impu-form-links {
+  .impu-form-links-reg a, .impu-form-links-pass a {
+    background: #258cb1;
+    width: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    line-height: 36px;
+    margin: 10px 0;
+  }
+}
+
+.lp-container .impu-form-links {
+  .impu-form-links-reg a, .impu-form-links-pass a {
+    background: #258cb1;
+    width: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    line-height: 36px;
+    margin: 10px 0;
+  }
+}
+
+.login-container .impu-remember-wrapper, .register-container .impu-remember-wrapper, .lp-container .impu-remember-wrapper {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 56.875em) {
+  .register-page .content-area, .lp-page .content-area, .login-page .content-area {
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+.register-page .ihc-login-error, .lp-page .ihc-login-error, .login-page .ihc-login-error {
+  font-size: 13px;
+  color: red;
+  margin-top: 5px;
+}
+
+.register-container {
+  width: 400px;
+  margin: 0 auto;
+  float: none;
+  .iump-labels-register {
+    font-size: 16px;
+    text-align: left;
+  }
+  .ihc-tos-wrap {
+    text-align: left;
+    a {
+      text-decoration: none !important;
+      text-transform: lowercase;
+      box-shadow: none !important;
+    }
+  }
+}
+body.projects-page {
+    background: linear-gradient(120deg,#00c4cc 25%,#6e4593 85%);
+    position: relative;
+    background-attachment: fixed;
+}
+
+.user-projects{
+  .show-all-btn{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 0;
+  }
+  ul.design-types{
+    overflow: hidden;
+    height: auto;
+    transition: all 1s ease;
+    max-height: 135px;
+    &.open{
+        max-height: 1000px;
+        height: auto;
+        transition: all 1s ease;
+    }
+    li{
+        float: left;
+        min-height: 130px;
+    }
+  }
+}
+
+.design-types{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li{
+        display: inline-block;
+        margin: 10px;
+        
+        a{
+            display: block;
+            cursor: pointer;
+        }
+        img{
+            max-width: 120px;
+        }
+        figcaption p {
+            color: white;
+            text-align: center;
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+}
+.projects-page{
+    h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: white;
+        font-weight: 400;
+    }
+    .projects-sidebar {
+        color: #647083;
+        position: fixed;
+        padding: 52px 15px 15px;
+        left: 0;
+        width: 250px;
+        top: 0;
+        height: 100%;
+        background-color: #0f1f2f;
+        z-index: 1;
+        box-sizing: border-box;
+        .site-branding{
+            margin-bottom: 20px;
+            .custom-logo{
+                max-width: 100% !important;
+            }
+        }
+
+        .media-object{
+            width: 40px;
+            margin-left: 5px;
+        }
+        .media-heading{
+            margin-bottom: 0px;
+            color: #647083;
+        }
+        .user-email{
+            font-size: 12px;
+        }
+        .site-header-menu{
+            margin: 0;
+            margin-left: 56px;
+            a{
+                color: #647083;
+            }
+        }
+    }
+    #content{
+        margin-left: 250px;
+        padding: 20px;
+        overflow: visible;
+    }
+    .site-inner{
+        max-width: 100%;
+    }
+    .site-footer{
+        margin-left: 250px;
+        padding: 20px;
+    }
+    .projects-row{
+        border-bottom: 1px solid rgba(255,255,255,.2);
+        margin-bottom: 20px;
+    }
+}

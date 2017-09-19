@@ -1,0 +1,253 @@
+/*
+Theme Name: MoonPixlar
+Theme URI: https://wordpress.org/themes/moonpixlar/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Template:     twentysixteen
+Description: MoonPixlar
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: moonpixlar
+*/
+@import url(helpers.css);
+html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: #F2F2F2;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif; }
+  body.login-page, body.register-page, body.lp-page {
+    background-image: url(images/bg_tiles.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  body.login-page:before, body.login-page:after {
+    height: 0; }
+  body.register-page:before, body.register-page:after {
+    height: 0; }
+  body.lp-page:before, body.lp-page:after {
+    height: 0; }
+  body.login-page .entry-header, body.register-page .entry-header, body.lp-page .entry-header {
+    display: none; }
+  body.login-page .site-header, body.register-page .site-header, body.lp-page .site-header {
+    text-align: center;
+    padding-bottom: 25px; }
+  body.login-page .site-header .site-branding, body.register-page .site-header .site-branding, body.lp-page .site-header .site-branding {
+    margin: 0 auto; }
+  body.login-page .site-header .site-branding .site-description, body.register-page .site-header .site-branding .site-description, body.lp-page .site-header .site-branding .site-description {
+    display: none; }
+  body.login-page .site-header .site-branding .site-title a, body.register-page .site-header .site-branding .site-title a, body.lp-page .site-header .site-branding .site-title a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 7px; }
+  body.login-page .site-footer .site-info, body.register-page .site-footer .site-info, body.lp-page .site-footer .site-info {
+    margin: 0 auto; }
+  body.login-page .site-footer a, body.register-page .site-footer a, body.lp-page .site-footer a {
+    color: #fff; }
+
+body:not(.custom-background-image):after {
+  bottom: 0;
+  height: 0; }
+
+.site {
+  background: transparent;
+  margin: 0px; }
+
+.login-container, .register-container, .lp-container {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 320px;
+  margin: 0 auto; }
+
+.login-container .button, .register-container .button, .lp-container .button {
+  background: #ff1070;
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 400; }
+
+.login-container .impu-form-line-fr input[type="text"], .login-container .impu-form-line-fr input[type="password"] {
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px; }
+
+.register-container .impu-form-line-fr input[type="text"], .register-container .impu-form-line-fr input[type="password"] {
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px; }
+
+.lp-container .impu-form-line-fr input[type="text"], .lp-container .impu-form-line-fr input[type="password"] {
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px; }
+
+.login-container .impu-form-links .impu-form-links-reg a, .login-container .impu-form-links .impu-form-links-pass a {
+  background: #258cb1;
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  line-height: 36px;
+  margin: 10px 0; }
+
+.register-container .impu-form-links .impu-form-links-reg a, .register-container .impu-form-links .impu-form-links-pass a {
+  background: #258cb1;
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  line-height: 36px;
+  margin: 10px 0; }
+
+.lp-container .impu-form-links .impu-form-links-reg a, .lp-container .impu-form-links .impu-form-links-pass a {
+  background: #258cb1;
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  line-height: 36px;
+  margin: 10px 0; }
+
+.login-container .impu-remember-wrapper, .register-container .impu-remember-wrapper, .lp-container .impu-remember-wrapper {
+  margin-bottom: 20px; }
+
+@media screen and (min-width: 56.875em) {
+  .register-page .content-area, .lp-page .content-area, .login-page .content-area {
+    margin: 0 auto;
+    float: none; } }
+
+.register-page .ihc-login-error, .lp-page .ihc-login-error, .login-page .ihc-login-error {
+  font-size: 13px;
+  color: red;
+  margin-top: 5px; }
+
+.register-container {
+  width: 400px;
+  margin: 0 auto;
+  float: none; }
+  .register-container .iump-labels-register {
+    font-size: 16px;
+    text-align: left; }
+  .register-container .ihc-tos-wrap {
+    text-align: left; }
+    .register-container .ihc-tos-wrap a {
+      text-decoration: none !important;
+      text-transform: lowercase;
+      box-shadow: none !important; }
+
+body.projects-page {
+  background: linear-gradient(120deg, #00c4cc 25%, #6e4593 85%);
+  position: relative;
+  background-attachment: fixed; }
+
+.user-projects .show-all-btn {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  padding: 0; }
+
+.user-projects ul.design-types {
+  overflow: hidden;
+  height: auto;
+  transition: all 1s ease;
+  max-height: 135px; }
+  .user-projects ul.design-types.open {
+    max-height: 1000px;
+    height: auto;
+    transition: all 1s ease; }
+  .user-projects ul.design-types li {
+    float: left;
+    min-height: 130px; }
+
+.design-types {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .design-types li {
+    display: inline-block;
+    margin: 10px; }
+    .design-types li a {
+      display: block;
+      cursor: pointer; }
+    .design-types li img {
+      max-width: 120px; }
+    .design-types li figcaption p {
+      color: white;
+      text-align: center;
+      font-weight: 500;
+      font-size: 14px;
+      margin-top: 5px; }
+
+.projects-page h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 400; }
+
+.projects-page .projects-sidebar {
+  color: #647083;
+  position: fixed;
+  padding: 52px 15px 15px;
+  left: 0;
+  width: 250px;
+  top: 0;
+  height: 100%;
+  background-color: #0f1f2f;
+  z-index: 1;
+  box-sizing: border-box; }
+  .projects-page .projects-sidebar .site-branding {
+    margin-bottom: 20px; }
+    .projects-page .projects-sidebar .site-branding .custom-logo {
+      max-width: 100% !important; }
+  .projects-page .projects-sidebar .media-object {
+    width: 40px;
+    margin-left: 5px; }
+  .projects-page .projects-sidebar .media-heading {
+    margin-bottom: 0px;
+    color: #647083; }
+  .projects-page .projects-sidebar .user-email {
+    font-size: 12px; }
+  .projects-page .projects-sidebar .site-header-menu {
+    margin: 0;
+    margin-left: 56px; }
+    .projects-page .projects-sidebar .site-header-menu a {
+      color: #647083; }
+
+.projects-page #content {
+  margin-left: 250px;
+  padding: 20px;
+  overflow: visible; }
+
+.projects-page .site-inner {
+  max-width: 100%; }
+
+.projects-page .site-footer {
+  margin-left: 250px;
+  padding: 20px; }
+
+.projects-page .projects-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px; }
